@@ -1,1 +1,1 @@
-Paperclip.register_processor(:bulk, Paperclip::Bulk)
+# Paperclip.register_processor(:bulk, Paperclip::Bulk)

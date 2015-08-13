@@ -3,7 +3,7 @@ require "net/http"
 
 namespace :seed do
 	task upload: :environment do
-		image = File.open('/home/alenteria/shit.jpg')
+		image = File.open('/home/alenteria/Pictures/4mb/1.jpg')
 		total_time = 0.0
 		(1..1000).each do |i|
 			start_time = Time.now

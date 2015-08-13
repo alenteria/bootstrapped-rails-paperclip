@@ -1,10 +1,6 @@
 class Upload < ActiveRecord::Base
   attr_accessible :upload
-  has_attached_file :upload,
-    :url => "/uploads/:id_:style_:filename",
-    :default_url => "/missing.png"
-
-  validates_attachment_content_type :upload, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+  has_attached_file :upload
 
   include Rails.application.routes.url_helpers
 
@@ -17,5 +13,4 @@ class Upload < ActiveRecord::Base
       "delete_type" => "DELETE" 
     }
   end
-
 end
