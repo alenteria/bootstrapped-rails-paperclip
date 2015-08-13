@@ -22,8 +22,11 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-fileupload-rails'
-gem 'paperclip'
+gem 'paperclip', '3.4.1'
 gem 'twitter-bootstrap-rails'
+gem 'pg'
+gem "delayed_paperclip"
+gem 'delayed_job_active_record'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
